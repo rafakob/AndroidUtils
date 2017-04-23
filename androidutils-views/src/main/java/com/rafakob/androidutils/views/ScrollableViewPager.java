@@ -1,4 +1,4 @@
-package com.rafakob.androidutils.view;
+package com.rafakob.androidutils.views;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;

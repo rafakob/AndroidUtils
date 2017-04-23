@@ -1,4 +1,4 @@
-package com.rafakob.androidutils.view;
+package com.rafakob.androidutils.views;
 
 import android.text.Editable;
 import android.text.TextWatcher;
