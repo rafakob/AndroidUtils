@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.rafakob.androidutils.R;
+import com.rafakob.androidutils.views.R;
 
 
 public class EmptyView extends LinearLayout {
