@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ErrorView">
+        <attr name="error_message" format="string"/>
+        <attr name="error_message_color" format="color"/>
+        <attr name="error_action" format="string"/>
+        <attr name="error_icon" format="reference"/>
+        <attr name="error_icon_tint" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="EmptyView">
+        <attr name="empty_message" format="string"/>
+        <attr name="empty_message_color" format="color"/>
+        <attr name="empty_action" format="string"/>
+        <attr name="empty_icon" format="reference"/>
+        <attr name="empty_icon_tint" format="color"/>
+    </declare-styleable>
+</resources>

@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.rafakob.androidutils.app.MainActivity">
 
+    <com.rafakob.androidutils.views.error.ErrorView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:error_action="Try again"
+        app:error_icon="@drawable/ic_android"
+        app:error_icon_tint="?colorAccent"
+        app:error_message="This is test"
+        app:error_message_color="?colorAccent"/>
 
 </LinearLayout>

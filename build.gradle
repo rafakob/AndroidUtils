@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.1'
+        classpath 'com.android.tools.build:gradle:2.3.2'
         classpath 'com.novoda:bintray-release:0.4.0'
     }
 }
@@ -18,6 +18,6 @@ allprojects {
 
 ext {
     SUPPORT_LIBRARY = '25.3.1'
-    RXJAVA = '2.0.9'
+    RXJAVA = '2.1.0'
     RXANDROID = '2.0.1'
 }
