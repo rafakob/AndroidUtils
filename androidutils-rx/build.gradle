@@ -21,8 +21,8 @@ android {
 }
 
 dependencies {
-    provided "io.reactivex.rxjava2:rxjava:$RXJAVA"
-    provided "io.reactivex.rxjava2:rxandroid:$RXANDROID"
+    compile "io.reactivex.rxjava2:rxjava:$RXJAVA"
+    compile "io.reactivex.rxjava2:rxandroid:$RXANDROID"
 }
 
 publish {
