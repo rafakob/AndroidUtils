@@ -24,6 +24,8 @@
         android:background="?selectableItemBackground"
         android:paddingEnd="24dp"
         android:paddingStart="24dp"
+        android:visibility="gone"
+        tools:visibility="visible"
         android:textColor="?colorAccent"
         tools:text="Try again"/>
 </merge>

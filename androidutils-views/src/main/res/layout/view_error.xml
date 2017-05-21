@@ -25,5 +25,7 @@
         android:paddingEnd="24dp"
         android:paddingStart="24dp"
         android:textColor="?colorAccent"
-        tools:text="Try again"/>
+        android:visibility="gone"
+        tools:text="Try again"
+        tools:visibility="visible"/>
 </merge>
