@@ -39,13 +39,13 @@ public class ErrorView extends LinearLayout {
     }
 
     private void setup(AttributeSet attrs) {
-        inflate(getContext(), R.layout.view_error, this);
+        inflate(getContext(), R.layout.layout_view_error, this);
         setOrientation(VERTICAL);
         setGravity(Gravity.CENTER);
 
-        icon = (ImageView) findViewById(R.id.icon);
-        message = (TextView) findViewById(R.id.message);
-        action = (Button) findViewById(R.id.action);
+        icon = (ImageView) findViewById(R.id.error_view_icon);
+        message = (TextView) findViewById(R.id.error_view_message);
+        action = (Button) findViewById(R.id.error_view_action);
 
         if (attrs == null) {
             return;
@@ -100,6 +100,9 @@ public class ErrorView extends LinearLayout {
     }
 
     public void setListener(final ErrorListener errorListener) {
+        if(action == null){
+            return;
+        }
         if (errorListener != null) {
             action.setVisibility(VISIBLE);
             action.setOnClickListener(new OnClickListener() {

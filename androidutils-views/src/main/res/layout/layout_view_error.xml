@@ -3,14 +3,14 @@
        xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
-        android:id="@+id/icon"
+        android:id="@+id/error_view_icon"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:contentDescription="Empty icon"
+        android:contentDescription="Error icon"
         tools:ignore="HardcodedText"/>
 
     <TextView
-        android:id="@+id/message"
+        android:id="@+id/error_view_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
@@ -18,14 +18,14 @@
         tools:text="This is state message"/>
 
     <Button
-        android:id="@+id/action"
+        android:id="@+id/error_view_action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="?selectableItemBackground"
         android:paddingEnd="24dp"
         android:paddingStart="24dp"
-        android:visibility="gone"
-        tools:visibility="visible"
         android:textColor="?colorAccent"
-        tools:text="Try again"/>
+        android:visibility="gone"
+        tools:text="Try again"
+        tools:visibility="visible"/>
 </merge>
