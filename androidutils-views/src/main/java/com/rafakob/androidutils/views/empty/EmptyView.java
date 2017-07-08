@@ -39,13 +39,13 @@ public class EmptyView extends LinearLayout {
     }
 
     private void setup(AttributeSet attrs) {
-        inflate(getContext(), R.layout.view_empty, this);
+        inflate(getContext(), R.layout.layout_view_empty, this);
         setOrientation(VERTICAL);
         setGravity(Gravity.CENTER);
 
-        icon = (ImageView) findViewById(R.id.icon);
-        message = (TextView) findViewById(R.id.message);
-        action = (Button) findViewById(R.id.action);
+        icon = (ImageView) findViewById(R.id.empty_view_icon);
+        message = (TextView) findViewById(R.id.empty_view_message);
+        action = (Button) findViewById(R.id.empty_view_action);
 
         if (attrs == null) {
             return;
@@ -100,6 +100,9 @@ public class EmptyView extends LinearLayout {
     }
 
     public void setListener(final EmptyListener emptyListener) {
+        if(action == null){
+            return;
+        }
         if (emptyListener != null) {
             action.setVisibility(VISIBLE);
             action.setOnClickListener(new OnClickListener() {
