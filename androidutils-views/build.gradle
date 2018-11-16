@@ -2,12 +2,11 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.3'
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 28
         versionCode verMajor * 100000 + verMinor * 100 + verPatch
         versionName "${verMajor}.${verMinor}.${verPatch}"
     }
@@ -21,21 +20,26 @@ android {
 }
 
 dependencies {
-    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY"
+    implementation "com.android.support:appcompat-v7:25.3.1"
 }
 
 publish {
     artifactId = 'androidutils-views'
     uploadName = 'AndroidUtils-Views'
 
-    publishVersion = bintray.publishVersion
-    repoName = bintray.repoName
-    groupId = bintray.groupId
-    desc = bintray.desc
-    website = bintray.website
-    repository = bintray.repository
-    licences = bintray.licences
-    dryRun = bintray.dryRun
-    bintrayUser = bintray.user
-    bintrayKey = bintray.key
+//    publishVersion = bintray.publishVersion
+//    repoName = bintray.repoName
+//    groupId = bintray.groupId
+//    desc = bintray.desc
+//    website = bintray.website
+//    repository = bintray.repository
+//    licences = bintray.licences
+//    dryRun = bintray.dryRun
+//    bintrayUser = bintray.user
+//    bintrayKey = bintray.key
+
+    publishVersion = "123"
+    groupId = "123"
+    userOrg = "123"
+    desc = "123"
 }

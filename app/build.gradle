@@ -1,12 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.rafakob.androidutils.app"
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -24,8 +23,8 @@ android {
 }
 
 dependencies {
-    compile project(':androidutils-views')
+    implementation project(':androidutils-views')
 
-    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY"
-    compile "com.android.support:design:$SUPPORT_LIBRARY"
+    implementation "com.android.support:appcompat-v7:25.3.1"
+    implementation "com.android.support:design:25.3.1"
 }
